@@ -1,0 +1,41 @@
+@font-face {
+  font-family: iconfont; /* Project id 3358198 */
+  src: url('iconfont.woff2?t=1664793869561') format('woff2'), url('iconfont.woff?t=1664793869561') format('woff'),
+    url('iconfont.ttf?t=1664793869561') format('truetype'), url('iconfont.svg?t=1664793869561') format('svg');
+}
+
+.iconfont {
+  font-family: iconfont !important;
+  font-size: 16px;
+  font-style: normal;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-shangfu::before {
+  content: '\e7ec';
+}
+
+.icon-xiafu::before {
+  content: '\e7fa';
+}
+
+.icon-youfu::before {
+  content: '\e7fb';
+}
+
+.icon-zuofu::before {
+  content: '\e801';
+}
+
+.icon-login-pwd::before {
+  content: '\e7e0';
+}
+
+.icon-login-acc::before {
+  content: '\e7ef';
+}
+
+.icon-home::before {
+  content: '\e7fe';
+}

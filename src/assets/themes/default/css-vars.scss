@@ -1,0 +1,46 @@
+// 注意: 这里放 CSS Variables, 不要声明 scss 变量
+:root,
+page {
+  // 为什么注释掉? https://github.com/NervJS/taro/issues/12607
+  // --body-padding-offset-top: 0px;
+  // --body-padding-offset-right: 0px;
+  // --body-padding-offset-bottom: 0px;
+  // --body-padding-offset-left: 0px;
+  //
+  // 主色调
+  --main-color: #f63;
+  // 次色调
+  --secondary-color: #fee;
+  // 再次色调
+  --thirdary-color: #0cc;
+  // 标题文本色
+  --title-text-color: #222;
+  // 默认文本色
+  --default-text-color: #333;
+  // 描述文本色
+  --descr-text-color: #999;
+  // 主文本色
+  --body-text-color: #666;
+  // 白文本色
+  --white-text-color: #fff;
+  // 考试文本色
+  --exam-text-color: #0af;
+
+  // 背景色start
+  // 默认背景色
+  --default-bg-color: #f8f8f8;
+  // 白背景色
+  --white-bg-color: #fff;
+  // 灰背景色
+  --gray-bg-color: #ededed;
+  // 主背景色
+  --main-bg-color: var(--main-color);
+  // 第三背景色
+  --thirdary-bg-color: var(--thirdary-color);
+  // 背景色end
+
+  // 边框色start
+  // 默认按钮边框色
+  --border-color: #f7f7f7;
+  // 边框色end
+}

@@ -1,0 +1,35 @@
+.srvTag {
+  @include iosSafeAreaBottom(24px);
+
+  width: 100%;
+  position: fixed;
+
+  // 拉起键盘过小时不显示
+  display: none;
+
+  .btn {
+    display: inline-block;
+    font-size: 12px;
+    color: #999;
+    line-height: 34px;
+    padding: 0 20px;
+    border: 1px solid #eee;
+    border-radius: 20px;
+    background: #fff;
+  }
+
+  :global {
+    .nut-icon {
+      font-size: 18px;
+      position: relative;
+      vertical-align: middle;
+      top: -2px;
+    }
+  }
+}
+
+@media (min-height: 520px) {
+  .srvTag {
+    display: block;
+  }
+}

@@ -1,0 +1,23 @@
+// 这个文件不要有样式，只能有 scss 变量
+// 1. 实际的变量覆盖在此文件完成，可用变量点击文件末尾的import可查看，或使用主题变量生成器 https://nutui.jd.com/theme
+// 2. awc那边基于这些变量重新生成css去覆盖相同的第三方库来统一风格
+
+// 覆盖的变量
+$primary-color: #f63;
+$primary-color-end: #f63;
+
+$button-large-height: 48px;
+$button-large-line-height: 24px;
+$button-default-height: 40px;
+$button-default-line-height: 20px;
+$button-small-height: 36px;
+$button-small-line-height: 20px;
+$button-mini-height: 30px;
+// 缺变量
+// $button-mini-line-height: 18px;
+
+// variables-jdb.scss，3
+// variables-jdt.scss，2
+// variables.scss，1
+// 下面文件中的scss变量全部应用了 !default 标记，所以要覆盖需要写在前面
+@import '@nutui/nutui-taro/dist/styles/variables.scss';

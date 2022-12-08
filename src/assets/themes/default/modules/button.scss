@@ -1,0 +1,8 @@
+.nut-button {
+  @at-root {
+    #{&}--primary#{&}--disabled {
+      opacity: 1;
+      background: #ffc6b2;
+    }
+  }
+}

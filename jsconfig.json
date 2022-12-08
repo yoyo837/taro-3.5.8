@@ -1,0 +1,14 @@
+{
+  "compilerOptions": {
+    "emitDecoratorMetadata": true,
+    "experimentalDecorators": true,
+    "jsx": "preserve",
+    "target": "es5",
+    "module": "esnext",
+    "baseUrl": ".",
+    "paths": {
+      "@/*": ["./src/*"]
+    }
+  },
+  "include": ["./src"]
+}

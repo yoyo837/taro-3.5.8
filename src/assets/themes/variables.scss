@@ -1,0 +1,17 @@
+// 这个文件不要有样式，只能有 scss 变量
+// ui scss 变量
+@import '../nutui/default/variables.scss';
+
+// 自有 scss 变量
+$mobileMaxWidth: 768px;
+
+@mixin iosSafeAreaBottom($offset: 0px) {
+  // bottom: $offset;
+  // bottom: calc(var(--body-padding-offset-bottom) + $offset);
+  // bottom: calc(var(--body-padding-offset-bottom) + $offset + constant(safe-area-inset-bottom));
+  // bottom: calc(var(--body-padding-offset-bottom) + $offset + env(safe-area-inset-bottom, 0px));
+  // 为什么改成下面这样?  https://github.com/NervJS/taro/issues/12607
+  bottom: $offset;
+  bottom: calc($offset + constant(safe-area-inset-bottom));
+  bottom: calc($offset + env(safe-area-inset-bottom, 0px));
+}

@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta
+      content="text/html; charset=utf-8"
+      http-equiv="Content-Type"
+    />
+    <meta
+      content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=no,viewport-fit=cover"
+      name="viewport"
+    />
+    <meta
+      name="apple-mobile-web-app-capable"
+      content="yes"
+    />
+    <meta
+      name="apple-touch-fullscreen"
+      content="yes"
+    />
+    <meta
+      name="format-detection"
+      content="telephone=no,address=no"
+    />
+    <meta
+      name="apple-mobile-web-app-status-bar-style"
+      content="white"
+    />
+    <meta
+      http-equiv="X-UA-Compatible"
+      content="IE=edge,chrome=1"
+    />
+    <!-- X5浏览器底部控制栏 遮挡问题修复 -->
+    <meta
+      name="x5-fullscreen"
+      content="true"
+    />
+    <!-- UC UC强制全屏 -->
+    <meta
+      name="”full-screen”"
+      content="”yes”"
+    />
+    <!--
+   <meta name="description" content="" />
+   <meta name="keywords" content="" />
+   -->
+    <title></title>
+    <link
+      rel="dns-prefetch"
+      href="//image.ydmap.cn"
+    />
+    <link
+      rel="dns-prefetch"
+      href="//cdnimg.ydmap.cn"
+    />
+    <link
+      rel="dns-prefetch"
+      href="//cdn.ydmap.cn"
+    />
+    <link
+      rel="dns-prefetch"
+      href="//cdnstatic.ydmap.cn"
+    />
+    <script>
+      <%= htmlWebpackPlugin.options.script %>
+    </script>
+    <!-- 如果是h5 -->
+    <% if(taroEnv === "h5") { %>
+      <% for (var key in h5Scripts) { %>
+      <script
+        defer="defer"
+        src="<%=h5Scripts[key].url %>"
+      ></script>
+      <% } %>
+    <% } %>
+    <!-- 结束如果 -->
+  </head>
+  <body>
+    <div id="app"></div>
+    <div class="bottom-safe-area-block"></div>
+  </body>
+</html>
